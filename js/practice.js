@@ -1582,80 +1582,80 @@
 // };
 // console.log(checkCentury(1997));
 
-const inventors = [
-  {
-    first: 'Albert',
-    last: 'Einstein',
-    year: 1879,
-    passed: 1955,
-  },
-  {
-    first: 'Isaac',
-    last: 'Newton',
-    year: 1643,
-    passed: 1727,
-  },
-  {
-    first: 'Galileo',
-    last: 'Galilei',
-    year: 1564,
-    passed: 1642,
-  },
-  {
-    first: 'Marie',
-    last: 'Curie',
-    year: 1867,
-    passed: 1934,
-  },
-  {
-    first: 'Johannes',
-    last: 'Kepler',
-    year: 1571,
-    passed: 1630,
-  },
-  {
-    first: 'Nicolaus',
-    last: 'Copernicus',
-    year: 1473,
-    passed: 1543,
-  },
-  {
-    first: 'Max',
-    last: 'Planck',
-    year: 1858,
-    passed: 1947,
-  },
-  {
-    first: 'Katherine',
-    last: 'Blodgett',
-    year: 1898,
-    passed: 1979,
-  },
-  {
-    first: 'Ada',
-    last: 'Lovelace',
-    year: 1815,
-    passed: 1852,
-  },
-  {
-    first: 'Sarah E.',
-    last: 'Goode',
-    year: 1855,
-    passed: 1905,
-  },
-  {
-    first: 'Lise',
-    last: 'Meitner',
-    year: 1878,
-    passed: 1968,
-  },
-  {
-    first: 'Hanna',
-    last: 'Hammarström',
-    year: 1829,
-    passed: 1909,
-  },
-];
+// const inventors = [
+//   {
+//     first: 'Albert',
+//     last: 'Einstein',
+//     year: 1879,
+//     passed: 1955,
+//   },
+//   {
+//     first: 'Isaac',
+//     last: 'Newton',
+//     year: 1643,
+//     passed: 1727,
+//   },
+//   {
+//     first: 'Galileo',
+//     last: 'Galilei',
+//     year: 1564,
+//     passed: 1642,
+//   },
+//   {
+//     first: 'Marie',
+//     last: 'Curie',
+//     year: 1867,
+//     passed: 1934,
+//   },
+//   {
+//     first: 'Johannes',
+//     last: 'Kepler',
+//     year: 1571,
+//     passed: 1630,
+//   },
+//   {
+//     first: 'Nicolaus',
+//     last: 'Copernicus',
+//     year: 1473,
+//     passed: 1543,
+//   },
+//   {
+//     first: 'Max',
+//     last: 'Planck',
+//     year: 1858,
+//     passed: 1947,
+//   },
+//   {
+//     first: 'Katherine',
+//     last: 'Blodgett',
+//     year: 1898,
+//     passed: 1979,
+//   },
+//   {
+//     first: 'Ada',
+//     last: 'Lovelace',
+//     year: 1815,
+//     passed: 1852,
+//   },
+//   {
+//     first: 'Sarah E.',
+//     last: 'Goode',
+//     year: 1855,
+//     passed: 1905,
+//   },
+//   {
+//     first: 'Lise',
+//     last: 'Meitner',
+//     year: 1878,
+//     passed: 1968,
+//   },
+//   {
+//     first: 'Hanna',
+//     last: 'Hammarström',
+//     year: 1829,
+//     passed: 1909,
+//   },
+// ];
 // - Вывести массив имён учёных/изобретателей
 // - Вывести массив тех кто родился в 19-ом веке
 // - Вывести массив тех, кто прожил больше 50-ти лет
@@ -1840,3 +1840,1051 @@ const inventors = [
 // Если несколько высокооплачиваемых сотрудников, можно вернуть любого из них.
 // P.S. Используйте Object.entries и деструктурирование, чтобы перебрать пары ключ/значение.
 // ___________________________________________
+
+// 1) найти объект бади и изменить его стиль. Задать красный бекграунд.
+
+// let body = document.querySelector('body');
+// let random = Math.round(Math.random() * 255);
+// body.style.backgroundColor = `rgb(${random},${random},${random})`;
+
+// for (let i = 0; i < 3; i++) {
+//   let div = document.createElement('div');
+//   body.append(div);
+//   div.textContent = 'some text';
+//   div.style.fontSize = '55px';
+//   div.classList.add('container');
+// }
+
+// 2) Дан список в штмл. Вставьте в него 3 лишки с текстом
+// let list = document.querySelector('ul');
+// console.log(list);
+
+// for (let i = 0; i < 3; i++) {
+//   let listElement = document.createElement('li');
+//   list.append(listElement);
+// }
+
+// 3)Создайте 5 красных кругов 100х100 пикселей (стили подключаються в цсс)
+
+// for (let i = 0; i < 5; i++) {
+//   let div = document.createElement('div');
+//   body.append(div);
+//   div.classList.add('redCircle');
+//   div.textContent = `${i}`;
+// }
+
+// 4)Добавьте всем дивам нумерацию (в свойство текст контент записывается какой это по счёту див)
+
+// let allDivs = document.querySelectorAll('div');
+// allDivs.forEach((el, i) => (el.textContent = `${i}`));
+
+// // 5)Создайте 3 картинки с котиками за одно операцию
+// for (let i = 0; i < 3; i++) {
+//   let cat = document.createElement('img');
+//   cat.src =
+//     'https://sm.mashable.com/mashable_sea/photo/default/man-fakes-death-cat-q6u_2z9w.png';
+//   body.append(cat);
+// }
+
+// 6)Создайте 3 рандомные картинки с котиками за одну операцию
+
+// for (let i = 0; i < 3; i++) {
+//   let cat = document.createElement('img');
+//   let idRandom = Math.round(Math.random() * 200);
+//   cat.src = `https://picsum.photos/id/${idRandom}/200/300`;
+//   body.append(cat);
+// }
+
+// --------------------------------------------
+// Шашличний калькулятор ))
+// 1) Створити в HTML розмітку:
+// 1.1) Заголовок "Скільки коштує мясо на шашлики?"
+// 1.2) Форму з двома інпутами і підписами до них.
+// В першому інпуті №1 вказуємо ціну за кілограм мяса (можна і з копійками до другого знаку після коми)
+// В другому інпуті №2 вибираємо через range кількість кілограм
+// 1.3) Справа внизу відображається загальга вартість мяса.
+// 2 ) Написати скрипт який буде рахувати загальну вартість мяса і виводити її на екран
+// 3) При змінні данних в інпуті №1 чи №2 автоматично має перераовуватися загальна вартість
+// 4) Завжди має відображатися валюта - гривня
+// 5) Загальна сума відображається з копійками (2 знаки після коми)
+// 6) В підписі другого інпута має бути кольорова підказка скільки кілограм вибрав користувач на другому інпуті.
+// 7) Кольрова підказка має змінювати своє значення при перетягувані повзунка.
+// 8) В інпуті №2 мін і мах поріг встановлюєте самостійно.
+// 9) При завантаженні сторінки скрип має автоматично розрахувати вартість на основі данних за замовчуванням які ви встановите в розмітці.
+// 10) Оформлення на свій смак.
+// 1) Отримати доступ до інпутів +
+// 2) Розраховуємо вартість +
+// 3) Показуємо результат на екрані +
+// 4) Перезаписуємо синій квадрат +
+// 5) Вартість 2 знака після коми і валюта +
+// 6) Подія на Форму +
+// 7) Запускати ф-ю при завантаженні сторінки+
+
+// const priceInput = document.querySelector('#price-input');
+// const priceOutput = document.querySelector('#price-output');
+// const volumeInput = document.querySelector('#volume-input');
+// const volumeOutput = document.querySelector('#volume-output');
+
+// priceInput.addEventListener('input', event => {
+//   let price = event.target.value * 100;
+//   let volume = volumeInput.value * 100;
+//   priceInput.value === ''
+//     ? (priceOutput.textContent = 'укажите цену в')
+//     : (priceOutput.textContent = Math.round((price * volume) / 100) / 100);
+// });
+
+// volumeInput.addEventListener('change', event => {
+//   volumeOutput.textContent = event.target.value;
+//   priceOutput.textContent =
+//     Math.round((100 * event.target.value * (priceInput.value * 100)) / 100) /
+//     100;
+//   volumeOutput.classList.remove(...volumeOutput.classList);
+//   if (event.target.value < 30 && event.target.value >= 20) {
+//     volumeOutput.classList.add('violet');
+//   } else if (event.target.value < 20) {
+//     volumeOutput.classList.add('green');
+//   } else volumeOutput.classList.add('tomato');
+// });
+
+// Crazy button
+// 1) Додати подію яка реагує на наведення мишки +
+// 2) Змінити координати Кнопки на випадкові +
+// 3) Кнопка не повинна залишати межі екрану
+
+// let crasy = document.querySelector('.crasy');
+// crasy.style.top = '50%';
+// crasy.style.left = '50%';
+
+// crasy.addEventListener('mouseover', e => {
+//   let random = Math.round(Math.random() * 90);
+//   let random2 = Math.round(Math.random() * 90);
+//   let random3 = Math.round(Math.random() * 90);
+//   let random4 = Math.round(Math.random() * 90);
+
+//   crasy.style.top = `${random}%`;
+//   crasy.style.left = `${random2}%`;
+//   crasy.style.right = `${random3}%`;
+//   crasy.style.bottom = `${random4}%`;
+// });
+
+// window.addEventListener(
+//   'scroll',
+//   // _.throttle(() => {
+//   //   console.log('Scroll event handler invocation every 300ms.');
+//   // }, 300),
+//   _.debounce(() => {
+//     console.log(
+//       'Input event handler invocation after 300ms of inactivity past burst.',
+//     );
+//   }, 300),
+// );
+
+// document.querySelector('input').addEventListener(
+//   'input',
+//   _.debounce(() => {
+//     console.log(
+//       'Input event handler invocation after 300ms of inactivity past burst.',
+//     );
+//   }, 300),
+// );
+
+// /1) Дан ul, в нем несколько li. Под ul сделайте кнопку, по нажатию на которую в конец ul будет добавляться новый li с текстом 'пункт'.
+// Сделайте так, чтобы при клике на каждый li, ему в конец добавлялся '!'.
+// Это должно работать и для вновь добавленных li.
+// Задачу решите с помощью делегирования (то есть событие должно быть навешано на ul).
+
+// const controlBtn = document.querySelector('.control');
+// const list = document.querySelector('.list');
+
+// controlBtn.addEventListener('click', () => {
+//   list.insertAdjacentHTML('beforeend', '<li>пункт</li>');
+// });
+
+// list.addEventListener('click', event => {
+//   console.log(event.target.nodeName);
+//   event.target.nodeName === 'LI' ? (event.target.textContent += '!') : '';
+// });
+
+//2) Дан список с именами юзеров ul>li>p. Под таблицей сделайте форму form>input+input, с помощью которой можно будет добавить нового юзера в список.
+//  Сделайте так, чтобы при клике на любой елемент появлялся prompt, с помощью которого можно изменить текст имени.
+//  Задачу решите с помощью делегирования (то есть событие должно быть навешано на ul).
+
+// const input = document.querySelector('.input');
+// const submitBtn = document.querySelector('.submit');
+// const userList = document.querySelector('.user-list');
+// console.log(userList);
+
+// submitBtn.addEventListener('click', event => {
+//   event.preventDefault();
+//   let user = input.value;
+//   userList.insertAdjacentHTML('beforeend', `<li><p>${user}</p></li>`);
+// });
+
+// userList.addEventListener('click', event => {
+//   if (event.target.nodeName === 'P') {
+//     let text = prompt(
+//       'Введите имя и фамилию пользователя, которого нужно добавить',
+//     );
+//     event.target.textContent = text;
+//   }
+// });
+
+// 3) Напишите ф-цию подсчёта количества  нажатий мышки за отрезок времени (используйте throttle),
+// выводите в консоль "Вы кликнули N раз за Т милисекунд"
+
+// const calcClicks = function (timeout) {
+//   let count = 1;
+//   window.addEventListener(
+//     'click',
+//     _.throttle(() => {
+//       window.onclick = () => (count += 1);
+//       console.log(`Вы кликнули ${count} раз за ${timeout} ms`);
+//       count = 1;
+//     }, timeout),
+//   );
+// };
+// calcClicks(1000);
+
+// let n = 0;
+// document.addEventListener('click', () => {
+//   n++;
+// });
+// document.addEventListener(
+//   'click',
+//   _.throttle(() => {
+//     console.log(`Вы кликнули ${n} раз за 1000 милисекунд`);
+//     n = 0;
+//   }, 1000),
+// );
+
+// Создайте компонент галлереи изображений следующего вида.
+
+// Реализуйте функционал:
+//   - image-gallery есть изначально в HTML-разметке как контейнер для компонента.
+//   - fullview содержит в себе увеличенную версию выбранного изображения из preview, и
+//     создается динамически при загрузке страницы.
+//   - preview это список маленьких изображений, обратите внимание на атрибут data-fullview,
+//     он содержит ссылку на большое изображение. preview и его элементы, также создаются
+//     динамически, при загрузке страницы.
+//   - При клике в элемент preview, необходимо подменить src тега img внутри fullview
+//     на url из data-атрибута выбраного элемента.
+//   - По умолчанию, при загрузке страницы, активным должен быть первый элемент preview.
+//   - Изображений может быть произвольное количество.
+//   - Используйте делегирование для элементов preview.
+//   - При клике, выбраный элемент из preview должен получать произвольный эффект выделения.
+//   - CSS-оформление и имена классов на свой вкус.
+//  Изображения маленькие и большие можно взять с сервиса https://www.pexels.com/, выбрав при скачивании
+//   размер. Пусть маленькие изображения для preview будут 320px по ширине, большие для fullview 1280px.
+//   Подберите изображения одинаковых пропорций.
+
+// Массив объектов с данными для создания компонента выглядит следующим образом.
+// Замените пути на соотвествующие вашим, или назовите изображения аналогично.
+
+// const galleryItems = [
+//   { preview: './img/1s.jpeg', fullview: './img/1L.jpeg', alt: 'alt text 1' },
+//   { preview: './img/2s.jpeg', fullview: './img/2L.jpeg', alt: 'alt text 2' },
+//   { preview: './img/3s.jpeg', fullview: './img/3L.jpeg', alt: 'alt text 3' },
+//   { preview: './img/4s.jpeg', fullview: './img/4L.jpeg', alt: 'alt text 4' },
+//   { preview: './img/5s.jpeg', fullview: './img/5L.jpeg', alt: 'alt text 5' },
+//   { preview: './img/6s.jpeg', fullview: './img/6L.jpeg', alt: 'alt text 6' },
+// ];
+
+// const fullview = document.querySelector('.fullview>img');
+// console.log(fullview.src);
+// const preview = document.querySelector('.preview');
+// const modalOpenBtn = document.querySelector('.modal-open');
+// const backdrop = document.querySelector('.backdrop');
+// const container = document.querySelector('.container');
+
+// modalOpenBtn.addEventListener('click', () => {
+//   backdrop.classList.add('is-open');
+//   container.classList.add('is-open');
+//   backdrop.addEventListener('click', event => {
+//     console.log(event.currentTarget);
+//     console.log(event.target);
+//     if (event.currentTarget === event.target) {
+//       backdrop.classList.remove('is-open');
+//       container.classList.remove('is-open');
+//     }
+//   });
+// });
+
+// galleryItems.forEach(image => {
+//   preview.insertAdjacentHTML(
+//     'beforeend',
+//     `<li class=preview-item>
+//   <img src="${image.preview}"
+//   data-fullview="${image.fullview}"
+//   alt="${image.alt}"/></li>`,
+//   );
+// });
+
+// const previewItem = document.querySelectorAll('.preview-item');
+
+// preview.addEventListener('click', event => {
+//   if (event.target.nodeName === 'IMG') {
+//     previewItem.forEach(el => {
+//       el.classList.remove('active');
+//     });
+//     fullview.src = event.target.dataset.fullview;
+//     event.target.parentNode.classList.toggle('active');
+//   }
+// });
+
+// добавить элемент. Появляется модалка с импутами и кнопкой. 1-й срси, дата срс, альт и при сабмите добавляется картинка
+// _________________________________ Учусь делать экспорт
+// import gallery from './gallery.js';
+// console.log(gallery);
+
+// import { name, surname } from './gallery.js';
+// console.log(name, surname);
+
+// import { test } from './gallery.js';
+
+// console.log(test);
+
+// let date = new Date();
+
+// // формат вывода
+// const options = {
+//   weekday: 'long',
+//   year: 'numeric',
+//   month: 'short',
+//   day: 'numeric',
+//   hour: '2-digit',
+//   minute: '2-digit',
+// };
+
+// const localeUk = date.toLocaleString('Uk-uk', options);
+// console.log(localeUk); // понеділок, 19 бер. 2018 р., 17:42
+
+// const date = new Date();
+
+// // проверим количество мс с с начала эпохи Unix
+// console.log(`Время в мс с начала эпохи Unix: ${date.getTime()}`);
+// // "Время в мс с начала эпохи Unix: ....  значения будут меняться :-)
+// // "Время в мс с начала эпохи Unix: 1504721892483"
+
+// let result = 'Date: ';
+// result += date.getFullYear() + '/'; // год
+// result += date.getMonth() + '/'; // месяц, начиная с 0
+// result += date.getDate() + '. Day of week: '; // день недели, начиная с 1
+// result += date.getDay() + '.'; // день , начиная с 0
+
+// result += ' Time: ' + date.getHours() + ':'; // часы
+// result += date.getMinutes() + ':'; // минуты
+// result += date.getSeconds() + ':'; // секунды
+// result += date.getMilliseconds() + ''; // милисекунды
+
+// // строка должна показать текущее время и дату
+// console.log(result); // "Date: 2017/8/6. Day of week: 3. Time: 21:18:12:483"
+// // ...  значения будут меняться :-)
+
+// const settings = {
+//   theme: 'dark',
+//   isAuthenticated: true,
+//   options: [1, 2, 3],
+// };
+
+// localStorage.setItem('settings', JSON.stringify(settings));
+
+// const savedSettings = localStorage.getItem('settings');
+// const parsedSettings = JSON.parse(savedSettings);
+
+// console.log(parsedSettings);
+
+// ___________________________________________________________________
+// DATA PRACTICE
+// Создать секундомер
+// На старт нельзя нажать больше одного раза
+// Нажав на стоп - пауза (+текст кнопки меняется на reset), нажав повторно кнопку (reset) - обнуление.
+// При паузе можно нажать старт и продолжить с момента остановки
+// Добавить к секундам десятые = 0.6s
+// 5. Когда таймер доходит до 60-ти секунд - у нас добавляется показатель минут
+// 6. Добавляем 3-ую кнопку Lap (круг), при нажатии на которую фиксируется текущее значение секундомера (не останавливая его) и добавляется это значение в список на экране
+// 7.Сделайте так, чтоб при перезагрузке страницы сохранялось состояние таймера и сделанные круги
+
+// const startBtn = document.querySelector('button[data-action=start]');
+// const stopBtn = document.querySelector('button[data-action=stop]');
+// const timerValue = document.querySelector('.timer');
+// const lapBtn = document.querySelector('button[data-action=lap]');
+// const lapValue = document.querySelector('.laps');
+
+// let timer = +localStorage.getItem('timer') || 550;
+// let timerId = null;
+// let mins = +localStorage.getItem('mins') || 0;
+// let secs = +localStorage.getItem('timer') / 10 || 0;
+// lapValue.innerHTML = localStorage.getItem('laps') || '';
+// timerValue.textContent = localStorage.getItem('timerValue') || 0;
+// stopBtn.disabled = true;
+
+// const updateTime = function () {
+//   secs = timer / 10;
+//   if (mins === 0) {
+//     timerValue.textContent = secs + 's';
+//     localStorage.setItem('timerValue', timerValue.textContent);
+//   } else {
+//     timerValue.textContent = mins + ' min ' + secs + 's';
+//     localStorage.setItem('timerValue', timerValue.textContent);
+//   }
+
+//   if (timer >= 600) {
+//     timer -= 600;
+//     mins += 1;
+//     localStorage.setItem('mins', mins);
+//   }
+// };
+
+// startBtn.addEventListener('click', event => {
+//   event.target.disabled = true;
+//   stopBtn.disabled = false;
+//   stopBtn.textContent = 'STOP';
+//   timerId = setInterval(() => {
+//     timer += 1;
+//     localStorage.setItem('timer', timer);
+//     updateTime();
+//   }, 100);
+// });
+
+// stopBtn.addEventListener('click', () => {
+//   clearInterval(timerId);
+//   if (stopBtn.textContent === 'RESET') {
+//     timer = 0;
+//     timerValue.textContent = 0;
+//     mins = 0;
+//     secs = 0;
+//     localStorage.clear();
+//     lapValue.textContent = '';
+//     stopBtn.textContent = 'STOP';
+//     stopBtn.disabled = true;
+//   } else {
+//     stopBtn.textContent = 'RESET';
+//   }
+//   startBtn.disabled = false;
+// });
+
+// lapBtn.addEventListener('click', () => {
+//   lapValue.innerHTML += `<li>${timerValue.textContent} круг</li>`;
+//   // lapValue.textContent += secs + ' круг ';
+//   localStorage.setItem('laps', lapValue.innerHTML);
+// });
+
+// ____________________Promise__________________________________
+
+// Напищите ф-цию, которая возвращает промис.
+// Имитируете получение данных.
+// Есть массив с разными типами данных (берете случайный элемент).
+// Первый then возвращает тип данных элемента, второй - его длину (если она есть), третий - возводит в квадрат (если число)
+// Catch ловит ошибки(undefined, false, 0, '')
+// const array = [{ a: 1 }, [], 'Hello', '', null, true, false, undefined, 5];
+// const arr2 = [5, 5, 5, 5, 5, 5, 5, 5];
+
+// const smth = arr => {
+//   let index = Math.round(Math.random() * (arr.length - 1));
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log(arr[index]);
+//       arr[index] ? res(arr[index]) : rej(arr[index]);
+//     }, 1000);
+//   });
+// };
+
+// smth(array)
+//   .then(data => {
+//     console.log(typeof data);
+//     return data;
+//   })
+//   .then(data => {
+//     data.length || data.length === 0 ? console.log(data.length) : '';
+//     typeof data === 'object' ? console.log(Object.keys(data).length) : '';
+//     return data;
+//   })
+//   .then(data => {
+//     typeof data === 'number' ? console.log(data * data) : '';
+//     return data;
+//   })
+//   .catch(data =>
+//     data === ''
+//       ? console.error('Пришла пустая строка')
+//       : console.error(`Ошибка: ${data}`),
+//   );
+
+// console.log(typeof array[8]);
+// console.log(typeof []);
+
+// задача
+// поведение
+// объект с телефоном
+// в объекте есть юрл картинки на телефон
+// в одном из зенов делали рендер картинки если получили
+// в кетче писали, сори не сегодня
+
+// const phone = {
+//   name: 'nokia',
+//   model: '7210',
+//   src:
+//     'https://rarephones.ru/image/cache/catalog/products/nokia/nokia7210supernova/nokia7210supernova-600x600.jpg',
+// };
+// const body = document.querySelector('body');
+
+// const giftPhone = obj => {
+//   let random = Math.random();
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       random > 0.3 ? res(obj) : rej('Не повезло тебе с телефоном, друг!');
+//     }, 1000);
+//   });
+// };
+
+// giftPhone(phone)
+//   .then(data => {
+//     setTimeout(() => {
+//       body.innerHTML = `<h1>Это же НОКИИИЯ СЕМЬДЕСЯТ ДВА ДЕСЯТЬ!!!</h1> <img src=${data.src}>`;
+//     }, 2000);
+//   })
+//   .catch(err => {
+//     setTimeout(() => {
+//       body.innerHTML += `<h1>${err}</h1>`;
+//     }, 2000);
+//   })
+//   .finally(() => {
+//     body.innerHTML = ` <img
+//     src="https://www.onlygfx.com/wp-content/uploads/2017/11/grunge-circle-frame-4.png"
+//     class="loader"
+//   />`;
+//   });
+// ____________________________________________________________
+
+// имя, логин, аватарка, тип (юзер, админ)
+// 1. Карточки юзеров (Аватар, id, логин, тип)
+// 2. В карточке кнопки (followers & following)
+// 3. При нажатии на кнопку - открывается модалка со списком людей (имя и маленькая аватарка)
+
+// const userList = document.querySelector('.user-cards');
+// const followersList = document.querySelector('.followers-list');
+// const followingList = document.querySelector('.following-list');
+// const modal = document.querySelector('.modal-window');
+// let usersArr = [];
+// // console.log(userList);
+// const api = 'https://api.github.com/users';
+
+// const getUsers = function (api) {
+//   fetch(api)
+//     .then(data => data.json())
+//     .then(data => {
+//       data.forEach(el => {
+//         userList.innerHTML += `<li><img src=${el.avatar_url}><h2>${el.login}</h2><p>id: ${el.id}</p><p>type: ${el.type}</p><button data-index="${el.id}" class="followers" type="button">Followers</button> <button data-index="${el.id}" class="following" type="button">Following</button></li>`;
+//         usersArr.push(el);
+//       });
+
+//       return data;
+//     });
+// };
+
+// getUsers(api);
+// let index;
+
+// userList.addEventListener('click', event => {
+//   event.path.forEach(el => {
+//     if (el.nodeName === 'BUTTON' && el.className === 'followers') {
+//       index = el.dataset.index;
+//       let fetchApi = usersArr[index - 1].followers_url;
+//       fetch(fetchApi)
+//         .then(data => data.json())
+//         .then(data => {
+//           data.forEach(el => {
+//             followersList.innerHTML += `<li><img src=${el.avatar_url}><h2>${el.login}</h2></li>`;
+//             modal.classList.add('is-open');
+//           });
+//         });
+//     } else if (el.nodeName === 'BUTTON' && el.className === 'following') {
+//       index = el.dataset.index;
+//       let fetchApi = usersArr[index - 1].subscriptions_url;
+//       fetch(fetchApi)
+//         .then(data => data.json())
+//         .then(data => {
+//           data.forEach(el => {
+//             followersList.innerHTML += `<li><img src=${el.owner.avatar_url}><h2>${el.name}</h2></li>`;
+//             modal.classList.add('is-open');
+//           });
+//         });
+//     }
+//   });
+//   modal.addEventListener('click', event => {
+//     if (event.currentTarget === event.target) {
+//       modal.classList.remove('is-open');
+//       followersList.innerHTML = '';
+//     }
+//   });
+//   window.addEventListener('keydown', event => {
+//     if (event.code === 'Escape') {
+//       modal.classList.remove('is-open');
+//       followersList.innerHTML = '';
+//     }
+//   });
+// });
+
+// console.log(usersArr);
+
+// let index;
+//   event.path.forEach(el => {
+//     if (el.nodeName === 'LI') {
+//       index = el.dataset.index;
+//       document.querySelector('.show-product').src = products[index - 1].link;
+//       document.querySelector('.modal-product-desc').textContent =
+//         products[index - 1].desc;
+//       document.querySelector('.modal-product-price').textContent =
+//         products[index - 1].price;
+//     }
+//   });
+
+// const token = '1355597204:AAGPu4YeV8fif43aztGsMWr7XeKpQhJTuBg';
+// const chat_id = -1001136944219;
+
+// const renderMsg = function (data) {
+//   data.forEach(({ message }) => {
+//     if (message.text) {
+//       document.querySelector('.chat').innerHTML += `<div>
+//       <h2>${message.from.first_name} ${message.from.last_name || ''}</h2>
+//       <p>${message.text}</p>
+//       <h4>time:${new Date(message.date * 1000).toLocaleTimeString()}</h4>
+//       </div>`;
+//     } else if (message.sticker) {
+//       fetch(
+//         `https://api.telegram.org/bot${token}/getFile?file_id=${message.sticker.file_id}`,
+//       )
+//         .then(data => data.json())
+//         .then(({ result }) => {
+//           document.querySelector('.chat').innerHTML += `<h2>${
+//             message.from.first_name
+//           } ${message.from.last_name || ''}</h2>
+//       <img src="https://api.telegram.org/file/bot${token}/${result.file_path}">
+//       <h4>time:${new Date(message.date * 1000).toLocaleTimeString()}</h4>`;
+//         });
+//     } else if (message.photo) {
+//       fetch(
+//         `https://api.telegram.org/bot${token}/getFile?file_id=${message.photo[0].file_id}`,
+//       )
+//         .then(data => data.json())
+//         .then(({ result }) => {
+//           document.querySelector(
+//             '.chat',
+//           ).innerHTML += `<img src=https://api.telegram.org/file/bot${token}/${result.file_path}></img>`;
+//         });
+//     } else if (message.animation) {
+//       fetch(
+//         `https://api.telegram.org/bot${token}/getFile?file_id=${message.animation.file_id}`,
+//       )
+//         .then(data => data.json())
+//         .then(({ result }) => {
+//           document.querySelector(
+//             '.chat',
+//           ).innerHTML += `<video type="video/mp4" muted autoplay loop src=https://api.telegram.org/file/bot${token}/${result.file_path}></video>`;
+//         });
+//     }
+//   });
+// };
+
+// const getChat = function () {
+//   fetch(`https://api.telegram.org/bot${token}/getUpdates`)
+//     .then(resp => resp.json())
+//     .then(({ result }) => {
+//       console.log(result);
+//       return result;
+//     })
+//     .then(renderMsg);
+// };
+
+// getChat();
+
+// const sendMsg = function (event) {
+//   event.preventDefault();
+//   let dataObj = {};
+//   [...event.target.children].forEach(el =>
+//     el.name ? (dataObj[el.name] = el.value) : '',
+//   );
+
+//   fetch(
+//     `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=NAME:
+//     ${dataObj.name},
+//     PHONE: ${dataObj.phone},
+//     FEEDBACK: ${dataObj.feedback}`,
+//   ).then();
+// };
+
+// // fetch(
+// //   `https://api.telegram.org/bot${token}/sendMessage?chat_id=136028109&text=hi`,
+// // );
+
+// document.querySelector('form').addEventListener('submit', sendMsg);
+
+// fetch(
+//   `https://api.telegram.org/bot${token}/getfile?file_id=CAACAgIAAx0CQ8RkWwADC1-cBk3-UuKgXRcGUw5n_I80miybAAK7AgACNnYgDtmgMuGbYT2PGwQ`,
+// )
+//   .then(data => data.json())
+//   .then(data => console.log(data));
+
+// https://api.telegram.org/file/bot1355597204:AAGPu4YeV8fif43aztGsMWr7XeKpQhJTuBg/stickers/file_0.webp
+
+// const fn = async function () {
+//   let response = await fetch('https://pokeapi.co/api/v2/pokemon/ditto');
+
+//   return response;
+// };
+
+// console.log(fn());
+
+// async function loadJson(url) {
+//   let result = await fetch(url);
+//   console.log(result);
+//   if (result.status == 200) {
+//     return await result.json();
+//   } else {
+//     return new Error(result.status);
+//   }
+// }
+
+// // loadJson('no-such-user.json') // (3)
+// //   .catch(alert); // Error: 404
+// console.log(loadJson('https://pokeapi.co/api/v2/pokemon/ditto'));
+
+// class HttpError extends Error {
+//   constructor(response) {
+//     super(`${response.status} for ${response.url}`);
+//     this.name = 'HttpError';
+//     this.response = response;
+//   }
+// }
+// async function loadJson(url) {
+//   let response = await fetch(url);
+//   if (response.status == 200) {
+//     return response.json();
+//   } else {
+//     throw new HttpError(response);
+//   }
+
+//   // return fetch(url).then(response => {
+//   //   if (response.status == 200) {
+//   //     return response.json();
+//   //   } else {
+//   //     throw new HttpError(response);
+//   //   }
+//   // });
+// }
+// Запрашивать логин, пока github не вернёт существующего пользователя.
+// async function demoGithubUser() {
+//   let data;
+//   try {
+//     let name = prompt('Введите логин?', 'iliakan');
+//     data = await loadJson(`https://api.github.com/users/${name}`);
+//     alert(`Полное имя: ${data.name}.`);
+//     return data;
+//   } catch (err) {
+//     if (err instanceof HttpError && err.response.status == 404) {
+//       alert('Такого пользователя не существует, пожалуйста, повторите ввод.');
+//       return demoGithubUser();
+//     } else {
+//       throw err;
+//     }
+//   }
+//   // return loadJson(`https://api.github.com/users/${name}`)
+//   //   .then(user => {
+//   //     alert(`Полное имя: ${user.name}.`);
+//   //     return user;
+//   //   })
+//   //   .catch(err => {
+//   //     if (err instanceof HttpError && err.response.status == 404) {
+//   //       alert('Такого пользователя не существует, пожалуйста, повторите ввод.');
+//   //       return demoGithubUser();
+//   //     } else {
+//   //       throw err;
+//   //     }
+//   //   });
+// }
+// demoGithubUser();
+
+// async function wait() {
+//   await new Promise(resolve => setTimeout(resolve, 1000));
+//   return 10;
+// }
+// function f() {
+//   // ...что здесь написать?
+//   // чтобы вызвать wait() и дождаться результата "10" от async–функции
+//   // не забывайте, здесь нельзя использовать "await"
+//   wait().then(data => console.log(data));
+// }
+
+// f();
+
+// let url = 'https://pokeapi.co/api/v2/pokemon';
+
+// const getImage = async function (url) {
+//   let pokeImage = await fetch(url)
+//     .then(result => result.json())
+//     .then(({ sprites }) => sprites.front_default);
+//   console.log(pokeImage);
+//   return pokeImage;
+// };
+
+// const observePoke = async function () {
+//   let images = [];
+//   let pokeData = await fetch(url)
+//     .then(response => response.json())
+//     .then(({ results }) => results);
+//   console.log(pokeData);
+
+//   pokeData.forEach(el => {
+//     images.push(getImage(el.url));
+//     console.log(images);
+//   });
+//   return Promise.all(images);
+// };
+
+// let arr = observePoke();
+
+// arr.then(response => render(response));
+
+// const render = async function (arr) {};
+
+// const url = 'https://pokeapi.co/api/v2/pokemon';
+// const fn = async () => {
+//   const pokes = await fetch(url)
+//     .then(res => res.json())
+//     .then(({ results }) => results);
+//   console.log(pokes); //тут получил уже готовый массив ендпоинтов покемонов
+//   const imgUrlsPromises = pokes.map(async poke => {
+//     let img = await fetch(poke.url)
+//       .then(res => res.json())
+//       .then(res => res.sprites.front_default);
+//     console.log(img);
+//     return img;
+//   });
+//   console.log(imgUrlsPromises); //Тут получил массив промисов с адресами картинок
+//   render(imgUrlsPromises); //тут ждем пока нарисует
+// };
+// async function render(arr) {
+//   let images = await Promise.all(arr); //тут получаю уже все адреса всех картинок из промисов
+//   images.forEach(el => {
+//     const imgUrl = el;
+//     document.body.insertAdjacentHTML('beforeend', `<img src=${imgUrl}>`);
+//   });
+//   const imgArr = document.querySelectorAll('img');
+//   console.log(imgArr);
+// }
+// fn();
+
+// let a = new (Date.bind.apply(Date, [null].concat([1993, 3, 24])))();
+// console.log(a);
+
+// const songs = [
+//   { id: 1, name: 'fdsfaa', artist: 'Mastodon' },
+//   { id: 2, name: 'blabla', artist: 'kaka' },
+//   { id: 3, name: 'blabafsdla', artist: 'kaka' },
+// ];
+
+// console.log(songs[0]);
+
+// // ES6
+// const obj = songs.reduce((acc, currValue) => {
+//   const artist = currValue.artist;
+//   const artistCount = acc[artist] ? acc[artist] + 1 : 1;
+//   console.log(acc);
+
+//   return {
+//     ...acc,
+//     [artist]: artistCount,
+//   };
+// }, {});
+
+// console.log(obj); // {Mastodon: 2, Gojira: 2}
+
+// const test = { Mastodon: 1, kaka: 1 };
+// console.log(test[1]);
+
+// const array1 = [1, 2, 3, 4];
+// const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// // 1 + 2 + 3 + 4
+// console.log(array1.reduce(reducer));
+// // expected output: 10
+
+// // 5 + 1 + 2 + 3 + 4
+// console.log(array1.reduce(reducer, 5));
+// // expected output: 15
+
+// const obj = {
+//   a: 1,
+//   b: 2,
+//   c() {
+//     console.log(this);
+//   },
+// };
+// const objCopy = JSON.parse(JSON.stringify(obj));
+// console.log(objCopy);
+
+// const matrix = [
+//   [1, 2],
+//   [4, 3],
+// ];
+
+// const spiral = function (matrix) {
+//   let colStart = 0;
+//   let rowStart = 0;
+//   let rowEnd = matrix.length;
+//   let colEnd = matrix[0].length;
+
+//   let result = [];
+
+//   while (rowStart <= rowEnd && colStart <= colEnd) {
+//     for (let i = colStart; i < colEnd; i++) {
+//       result.push(matrix[rowStart][i]);
+//     }
+//     rowStart++;
+
+//     for (let i = rowStart; i < rowEnd; i++) {
+//       result.push(matrix[i][colEnd - 1]);
+//     }
+//     colEnd--;
+
+//     if (rowStart < rowEnd) {
+//       for (let i = colEnd - 1; i >= colStart; i--) {
+//         console.log(i);
+//         result.push(matrix[rowEnd - 1][i]);
+//       }
+//       rowEnd--;
+//     }
+
+//     if (colStart < colEnd) {
+//       for (let i = rowEnd - 1; i >= rowStart; i--) {
+//         result.push(matrix[i][colStart]);
+//       }
+//       colStart++;
+//     }
+//   }
+
+//   console.log(result);
+// };
+
+// spiral(matrix);
+
+// const randomFunc = () => {
+//   let randomNumber;
+//   let generatedNumbers = [];
+//   let arrBeforeRepeate = [];
+
+//   const generateNumber = () => {
+//     randomNumber = Math.floor(1 + Math.random() * 20);
+//     if (generatedNumbers.includes(randomNumber)) {
+//       console.log('randomNumber is ', randomNumber);
+//       arrBeforeRepeate = [...generatedNumbers];
+//       generatedNumbers = [];
+//       return arrBeforeRepeate;
+//     }
+//     generatedNumbers.push(randomNumber);
+//     console.table(generatedNumbers);
+//     return randomNumber;
+//   };
+//   return generateNumber;
+// };
+
+// let test = randomFunc();
+// let test2 = randomFunc();
+// console.log(test());
+// console.log(test());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log(test());
+
+// console.log(test());
+
+// console.log(test());
+// console.log(test());
+// console.log(test());
+// console.log(test());
+// console.log(test());
+// console.log(test());
+
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+// console.log('test2: ', test2());
+
+// let someFn = number => {
+//   let first = new Promise(res => {
+//     setTimeout(() => {
+//       console.log(number * number);
+//       res(number * number);
+//     }, 3000);
+//   });
+// }
+
+//   first.then(data =>
+//     setTimeout(() => {
+//       console.log(data * data);
+//     }, 3000),
+//   );
+
+// doSomething(function(result) {
+//     doSomethingElse(result, function(newResult) {
+//       doThirdThing(newResult, function(finalResult) {
+//         console.log('Ось фінальний результат: ' + finalResult);
+//       }, failureCallback);
+//     }, failureCallback);
+//   }, failureCallback);
+
+// const group = {
+//   users: ['one', 'two'],
+//   sayHi: function (user) {
+//     console.log(`Hi ${user}`);
+//   },
+//   sayHiToAll: function () {
+//     this.users.forEach(function (user) {
+//       group.sayHi(user);
+//     });
+//   },
+// };
+
+// group.sayHiToAll();
+
+// const books = [
+//   { amount: 2, price: 120 },
+//   { amount: 1, price: 150 },
+// ];
+
+// const totalFn = books => {
+//   return books.reduce((total, book) => {
+//     total += book.amount * book.price;
+//     return total;
+//   }, 0);
+// };
+
+// console.log('totalFn', totalFn(books));
+
+// document
+//   .getElementById('board')
+//   .addEventListener(
+//     'click',
+//     ({ target }) => target.id % 2 === 0 && alert(target.id),
+//   );
+
+const arr = [8, 1, 3, 1, 176, 3, 4, 5, 8, 8, 8, 9, 5, 5];
+const result = {};
+
+const calculateFn = arr => {
+  let result = {};
+
+  arr.forEach((el, i, arr) => {
+    if (result.hasOwnProperty(el)) {
+      result[el] += 1;
+    } else result[el] = 1;
+  });
+  console.log(result);
+  return result;
+};
+
+calculateFn(arr);

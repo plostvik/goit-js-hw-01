@@ -1547,3 +1547,38 @@ const users = [
  'nulla', 'proident',
  'tempor', 'velit',
  'veniam' ]; */
+
+// const arr = [1, 2, 3];
+
+// console.log(
+//   arr.reduce((acc, el) => {
+//     acc[el] = el;
+//     return acc;
+//   }, {}),
+// );
+
+// const reduce = function (arr, callback, acc) {
+//   let result = acc;
+//   for (let el of arr) {
+//     result = callback(result, el);
+//   }
+
+//   return result;
+// };
+
+// console.log(
+//   reduce(
+//     arr,
+//     (acc, el) => {
+//       acc[el] = el;
+//       return acc;
+//     },
+//     {},
+//   ),
+// );
+
+// arr.map((el, i, arr) => el + 1);
+
+// const obj = {};
+// obj[1] = 1;
+// console.log(obj);

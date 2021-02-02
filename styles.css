@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+
+body {
+  /* text-align: center; */
+  background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+  font-family: 'Inter', sans-serif;
+  font-size: 100%;
+}
+
+img {
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  margin: 10px;
+}
+
+.container {
+  width: 1140px;
+  padding: 30px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5%;
+}
+
+h2 {
+  margin: 10px;
+  /* font-family: 'Arial'; */
+}
+
+p {
+  margin: 5px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: #fff;
+  width: 130px;
+  height: 42px;
+  outline: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-weight: 300;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 70px;
+  background-color: tomato;
+  box-shadow: 0 13px 26px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.16);
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  /* transform: translate(-50%, -50%); */
+}
+
+.modal-wrapper {
+  overflow: hidden auto;
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  margin: 0 auto;
+  padding: 30px;
+  /* margin: 0 auto; */
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+/* input ~ label {
+  color: blue;
+}
+
+input:checked ~ label {
+  color: tomato;
+} */
